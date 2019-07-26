@@ -15,6 +15,8 @@ import javax.swing.JTextField;
 import javax.swing.JTable;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.LineBorder;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JScrollBar;
 
 public class 退号界面 extends JFrame {
 
@@ -84,6 +86,7 @@ public class 退号界面 extends JFrame {
 		textField.setColumns(10);
 		
 		JButton button = new JButton("\u67E5\u8BE2");
+		button.setBackground(new Color(204, 255, 255));
 		button.setFont(new Font("宋体", Font.PLAIN, 20));
 		button.setBounds(276, 57, 118, 43);
 		panel_1.add(button);
@@ -93,10 +96,41 @@ public class 退号界面 extends JFrame {
 		label_1.setBounds(24, 122, 186, 43);
 		panel_1.add(label_1);
 		
+		JButton button_1 = new JButton("\u9000\u53F7");
+		button_1.setBackground(new Color(204, 255, 255));
+		button_1.setFont(new Font("宋体", Font.PLAIN, 20));
+		button_1.setBounds(418, 371, 110, 43);
+		panel_1.add(button_1);
+		
 		table = new JTable();
-		table.setBackground(new Color(0, 0, 0));
+		table.setColumnSelectionAllowed(true);
+		table.setCellSelectionEnabled(true);
+		table.setFillsViewportHeight(true);
+		table.setSurrendersFocusOnKeystroke(true);
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+			},
+			new String[] {
+				"New column", "New column", "New column", "New column", "New column", "New column"
+			}
+		));
 		table.setBorder(new LineBorder(new Color(0, 0, 0)));
-		table.setBounds(80, 307, 192, -114);
+		table.setBounds(55, 178, 851, 162);
 		panel_1.add(table);
+		
+		JScrollBar scrollBar = new JScrollBar();
+		scrollBar.setBounds(885, 178, 21, 162);
+		panel_1.add(scrollBar);
+		
+		JScrollBar scrollBar_1 = new JScrollBar();
+		scrollBar_1.setOrientation(JScrollBar.HORIZONTAL);
+		scrollBar_1.setBounds(55, 316, 851, 24);
+		panel_1.add(scrollBar_1);
 	}
 }

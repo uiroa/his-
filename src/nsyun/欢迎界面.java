@@ -47,7 +47,7 @@ public class ª∂”≠ΩÁ√Ê extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel label = new JLabel("\u6B22\u8FCE:");
-		label.setFont(new Font("ÀŒÃÂ", Font.PLAIN, 22));
+		label.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 22));
 		label.setBounds(14, 54, 95, 35);
 		contentPane.add(label);
 		
@@ -60,7 +60,7 @@ public class ª∂”≠ΩÁ√Ê extends JFrame {
 		JButton btnNewButton = new JButton("\u6302\u53F7\u754C\u9762");
 		btnNewButton.setForeground(new Color(0, 0, 0));
 		btnNewButton.setBackground(new Color(204, 255, 255));
-		btnNewButton.setFont(new Font("ÀŒÃÂ", Font.PLAIN, 26));
+		btnNewButton.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 26));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -70,19 +70,19 @@ public class ª∂”≠ΩÁ√Ê extends JFrame {
 		
 		JButton button = new JButton("\u7F34\u8D39\u754C\u9762");
 		button.setBackground(new Color(204, 255, 255));
-		button.setFont(new Font("ÀŒÃÂ", Font.PLAIN, 26));
+		button.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 26));
 		button.setBounds(373, 146, 187, 58);
 		contentPane.add(button);
 		
 		JButton button_1 = new JButton("\u9000\u8D39\u754C\u9762");
 		button_1.setBackground(new Color(204, 255, 255));
-		button_1.setFont(new Font("ÀŒÃÂ", Font.PLAIN, 26));
+		button_1.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 26));
 		button_1.setBounds(373, 255, 187, 58);
 		contentPane.add(button_1);
 		
 		JButton button_2 = new JButton("\u9000\u53F7\u754C\u9762");
 		button_2.setBackground(new Color(204, 255, 255));
-		button_2.setFont(new Font("ÀŒÃÂ", Font.PLAIN, 26));
+		button_2.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 26));
 		button_2.setBounds(97, 255, 187, 58);
 		contentPane.add(button_2);
 		

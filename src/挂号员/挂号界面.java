@@ -30,6 +30,8 @@ import javax.swing.border.SoftBevelBorder;
 import javax.swing.UIManager;
 import javax.swing.border.TitledBorder;
 
+import BaseFrameDao.BaseFrameDao;
+
 public class π“∫≈ΩÁ√Ê {
 
 	private JFrame frame;
@@ -289,5 +291,10 @@ public class π“∫≈ΩÁ√Ê {
 		panel.add(lblHis);
 		lblHis.setBackground(Color.LIGHT_GRAY);
 		lblHis.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.BOLD, 28));
+		
+		JLabel lblNewLabel = new JLabel();
+		BaseFrameDao.GUI(lblNewLabel, "C:\\Users\\admin\\Desktop\\pic\\2.jpg");
+		lblNewLabel.setBounds(239, 0, 63, 78);
+		panel.add(lblNewLabel);
 	}
 }
